@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="script.js" defer></script>
+    <title>Drug Taking Confidence Questionaire</title>
+
+</head>
+<body>
+    <h1>Drink or Drug-Taking Confidence Questionnaire</h1>
+
+    <form id="form">
+      <input type="text" placeholder="Patient Reference" name="patient-details" maxLength="40">
+    </form>
+
+  <p id="intro">Listed below are some situations or events in which people might drink or use drugs.
+    Imagine yourself right now in each of these situations.
+    Indicate on the scale provided how confident you are that you would be able to resist the urge
+    to drink or use drugs in that situation.</p>
+  <p id="instructions">Click 100 if if you are 100% confident right now that you could resist the urge to drink or use drugs;
+    80 if you 80% confident; 60 if you are 60% confident. <br><br>
+    If you're more unconfident than confident, choose 40 to indicate that
+    you're only 40% confident that you could resist the urge to use drink or use, or 20 for 20% confidence.
+    Choose zero if you have no confidence at all about that situation.</p>
+
+    <button id="begin-the-test">Begin the test</button>
+
+    <div id="questions"></div>
+
+    <div id="buttons">
+      
+      <button class="score-button" id="score-button-0" value="0">0</button>
+      <button class="score-button" id="score-button-20" value="20">20</button>
+      <button class="score-button" id="score-button-40" value="40">40</button>
+      <button class="score-button" id="score-button-60" value="60">60</button>
+      <button class="score-button" id="score-button-80" value="80">80</button>
+      <button class="score-button" id="score-button-100" value="100">100</button>
+
+    </div>
+
+    <div id="chart-container"></div>
+
+    
+</body>
+</html>
